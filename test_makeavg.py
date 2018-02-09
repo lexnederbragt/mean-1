@@ -1,4 +1,4 @@
-from functiontest import makeavg
+from mean_mod import makeavg
 
 def test_ints():
     num_list = [1,2,3,4,5]
@@ -24,7 +24,7 @@ def test_complex():
     num_list = [2+3j,3+4j,-32-2j]
     obs = makeavg(num_list)
     exp = NotImplemented
-    assert obs == exp 
+    assert obs == exp
 if __name__ == "__main__":
     test_ints()
     print('int ok')
