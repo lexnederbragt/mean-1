@@ -18,6 +18,13 @@ def test_long():
     exp = big/2
     assert obs == exp
 
+def test_complex():
+    # testing for complex numbers
+    # as arithmatic mean of complecx numbers is meaningless
+    num_list = [2+3j,3+4j,-32-2j]
+    obs = makeavg(num_list)
+    exp = NotImplemented
+    assert obs == exp 
 if __name__ == "__main__":
     test_ints()
     print('int ok')
